@@ -9,3 +9,5 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - Đỗ Vũ Quang - 19000467
 ## Introduction and goal of the project:
 - Learn about ARCore.
+- build a simple AR app
+- can replace the plane with a given image
