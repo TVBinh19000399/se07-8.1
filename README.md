@@ -7,3 +7,5 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - Nguyễn Thanh Chính - 18001024
 - Trần Hồng Lâm - 19000334
 - Đỗ Vũ Quang - 19000467
+## Introduction and goal of the project:
+- Learn about ARCore.
