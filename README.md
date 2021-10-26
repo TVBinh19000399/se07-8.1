@@ -11,3 +11,9 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - Learn about ARCore.
 - build a simple AR app
 - can replace the plane with a given image
+- demo application on phones or tablets using android
+## Deployment environment / System Requirements
+
+**Software:**
+- Android Studio (2.8 or later)
+- Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore)
