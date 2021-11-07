@@ -17,3 +17,4 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 **Software:**
 - Android Studio (2.8 or later)
 - Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore)
+- Unity version: 2018.3
