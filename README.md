@@ -15,7 +15,7 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 ## Deployment environment / System Requirements
 
 **Software:**
-- ARCore (Current version: 2018.3): Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore)
+- ARCore (Current version: 2018.3): Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore SDK)
 - ARFoundation(version: 2020.2): With ARCore Extension
 
 ## Demo sample ARCore (Unity version 2018)
