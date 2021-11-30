@@ -1,5 +1,6 @@
 # se07-8.1
 Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến việc sử dụng Unity để code ứng dụng, hiển thị và demo ứng dụng trên mobile. Yêu cầu phải thay thế được một mặt phẳng bằng một ảnh bề mặt cho trước
+-Thay thế bề mặt sàn bằng các loại lát gạch có hoa văn khác nhau.
 # Instructor: Bui Sy Nguyen - Founder and CEO of House3D
 
 # Authors:
