@@ -15,7 +15,7 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - Demo ứng dụng trên thiết bị Android.
 ## Yêu cầu về phần mềm.
 
-**Software:**
+**Phiên bản:**
 - ARCore (Current version: 2018.3): Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore SDK)
 - ARFoundation(version: 2020.2): With ARCore Extension
 
