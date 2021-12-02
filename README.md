@@ -6,7 +6,7 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 # Tác giả:
 - Trần Văn Bình - 19000399
 - Nguyễn Thanh Chính - 18001024
-- Trần Hồng Lâm - 19000334
+- Trần Hồng Lâm - 19000443
 - Đỗ Vũ Quang - 19000467
 ## Introduction and goal of the project:
 - Tìm hiểu về AR.
