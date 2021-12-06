@@ -25,3 +25,6 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 ## Demo AR Foundation/ARCore Extension (Unity version 2020)
 ![GIF_20211205_233836](https://user-images.githubusercontent.com/92351087/144755306-c81e3b7e-47b7-4bca-93d6-b6d98b00f599.gif)
 
+## Updated
+![image](https://user-images.githubusercontent.com/92351087/144897376-bb03eb14-5c77-4e7e-8708-b3711b6c30b6.png)
+
