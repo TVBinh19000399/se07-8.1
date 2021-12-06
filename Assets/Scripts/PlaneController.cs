@@ -11,6 +11,14 @@ public class PlaneController : MonoBehaviour
     [SerializeField]
     Text togglePlaneText;
     ARPlaneManager ARPlaneManager;
+    public Material[] materials;
+    public MeshRenderer meshRenderer;
+
+public void fillPlane(){
+
+}
+
+
     public Text togglePlaneTxt
     {
         get { return togglePlaneText; }
