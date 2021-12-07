@@ -1,6 +1,6 @@
 # se07-8.1
 Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến việc sử dụng Unity để code ứng dụng, hiển thị và demo ứng dụng trên mobile. Yêu cầu phải thay thế được một mặt phẳng bằng một ảnh bề mặt cho trước
-- Thay thế bề mặt sàn bằng các loại lát gạch có hoa văn khác nhau.
+- Thay thế bề mặt sàn (một phần hoặc toàn bộ) bằng các loại lát gạch có hoa văn khác nhau hoặc thay thế vật liệu sàn.
 # Giảng viên: Bùi Sỹ Nguyên
 
 # Tác giả:
@@ -23,8 +23,9 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 ![GIF_20211107_091731](https://user-images.githubusercontent.com/92351087/140629998-34b70d2c-4613-48df-9bd0-6a3123975230.gif)
 
 ## Demo AR Foundation/ARCore Extension (Unity version 2020)
-![GIF_20211205_233836](https://user-images.githubusercontent.com/92351087/144755306-c81e3b7e-47b7-4bca-93d6-b6d98b00f599.gif)
+![20211207_000442](https://user-images.githubusercontent.com/92351087/144957777-81a3428b-4898-4212-b9f6-1feeed1cef04.gif)
 
-## Updated
+
+## New update
 ![image](https://user-images.githubusercontent.com/92351087/144897376-bb03eb14-5c77-4e7e-8708-b3711b6c30b6.png)
 
