@@ -2285,6 +2285,7 @@ GameObject:
   - component: {fileID: 511548562}
   - component: {fileID: 511548564}
   - component: {fileID: 511548563}
+  - component: {fileID: 511548565}
   m_Layer: 5
   m_Name: returnMenuVerify
   m_TagString: Untagged
@@ -2327,7 +2328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
+  m_Color: {r: 0.20128158, g: 0.27869648, b: 0.41509432, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2352,6 +2353,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511548561}
   m_CullTransparentMesh: 1
+--- !u!114 &511548565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511548561}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc045ea5749484949b79434b1cb945f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519311996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,7 +4541,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2012004083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 511548565}
+        m_TargetAssemblyTypeName: returnMenu, Assembly-CSharp
+        m_MethodName: Start
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2012004083
 MonoBehaviour:
   m_ObjectHideFlags: 0
