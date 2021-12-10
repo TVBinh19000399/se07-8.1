@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 public class ARTapToPlaceObject : MonoBehaviour
 {
     public GameObject showingPlane;
     public GameObject[] arModels;
     private GameObject spawedObject;
-    private ARRaycastManager _arraycastManager;
+    private ARRaycastManager ACManager;
     private Vector2 touchPosition;
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
-    // public GameObject changePlaneButton;
 
     private Pose PlacementPose;
-    bool isOne = false;
-
+    public float m_Min = 0f;
+    public float m_Max = 360f;
+    Slider m_Slider;
     private void Awake()
     {
-        _arraycastManager = GetComponent<ARRaycastManager>();
-
+        ACManager = GetComponent<ARRaycastManager>();
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
@@ -37,7 +37,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
-        if (_arraycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+        if (ACManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             PlacementPose = hits[0].pose;
             if (spawedObject == null)
@@ -54,21 +54,6 @@ public class ARTapToPlaceObject : MonoBehaviour
         }
 
 
-    }
-
-    public void changeObject()
-    {
-        clearr();
-        if (isOne)
-        {
-            showingPlane = arModels[1];
-        }
-        else
-        {
-            showingPlane = arModels[0];
-        }
-        isOne = !isOne;
-        // spawedObject = Instantiate(showingPlane, PlacementPose.position, PlacementPose.rotation);
     }
 
     public void clearr()
@@ -124,6 +109,18 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         clearr();
         showingPlane = arModels[7];
+    }
+    //scale obj
+    public void scale()
+    {
+
+    }
+
+
+    //rotate obj
+    public void rotate()
+    {
+
     }
 
 

@@ -11,14 +11,9 @@ public class PlaneController : MonoBehaviour
     [SerializeField]
     Text togglePlaneText;
     ARPlaneManager ARPlaneManager;
-    public Material[] materials;
-    public MeshRenderer meshRenderer;
-
-public void fillPlane(){
-
-}
-
-
+    private GameObject defaultPlane;
+    bool isFilled = false;
+    public ARSession arSession;
     public Text togglePlaneTxt
     {
         get { return togglePlaneText; }
@@ -27,6 +22,7 @@ public void fillPlane(){
     void Awake()
     {
         ARPlaneManager = GetComponent<ARPlaneManager>();
+        defaultPlane = GameObject.FindGameObjectWithTag("PlaneTag");
     }
 
     public void TogglePlane()
@@ -49,11 +45,28 @@ public void fillPlane(){
             togglePlaneTxt.text = planeDetectionMessage;
     }
 
-    void SetAllPlanesActive(bool value)
+    public void SetAllPlanesActive(bool value)
     {
         foreach (var plane in ARPlaneManager.trackables)
             plane.gameObject.SetActive(value);
     }
 
 
+    //fill toan bo mat phang
+    public void ChangeAllPlaneMaterial()
+    {
+        if (isFilled)
+        {
+            arSession.Reset();
+        }
+        else
+        {
+            GameObject curentObject = GameObject.FindGameObjectWithTag("models");
+            Material mat = curentObject.GetComponent<Renderer>().material;
+            foreach (var plane in ARPlaneManager.trackables)
+                plane.gameObject.GetComponent<Renderer>().material = mat;
+
+        }
+        isFilled = !isFilled;
+    }
 }
