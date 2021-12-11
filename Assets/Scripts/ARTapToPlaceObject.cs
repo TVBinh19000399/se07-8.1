@@ -15,12 +15,14 @@ public class ARTapToPlaceObject : MonoBehaviour
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     private Pose PlacementPose;
-    public float m_Min = 0f;
-    public float m_Max = 360f;
-    Slider m_Slider;
+    public float min = 0f;
+    public float max = 360f;
+    public Slider slider;
+    // private ARSessionOrigin SessionOrigin;
     private void Awake()
     {
         ACManager = GetComponent<ARRaycastManager>();
+        // SessionOrigin = GetComponent<ARSessionOrigin>();
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
@@ -110,18 +112,10 @@ public class ARTapToPlaceObject : MonoBehaviour
         clearr();
         showingPlane = arModels[7];
     }
-    //scale obj
-    public void scale()
+    public void OnSliderValueChanged()
     {
-
+        Slider slider = GameObject.FindGameObjectWithTag("scalesl").GetComponent<Slider>();
+        spawedObject.transform.localScale = new Vector3(slider.value, slider.value, slider.value);
     }
-
-
-    //rotate obj
-    public void rotate()
-    {
-
-    }
-
 
 }
