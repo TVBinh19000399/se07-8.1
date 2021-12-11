@@ -15,8 +15,6 @@ public class ARTapToPlaceObject : MonoBehaviour
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     private Pose PlacementPose;
-    public float min = 0f;
-    public float max = 360f;
     public Slider slider;
     // private ARSessionOrigin SessionOrigin;
     private void Awake()
@@ -25,7 +23,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         // SessionOrigin = GetComponent<ARSessionOrigin>();
     }
 
-    bool TryGetTouchPosition(out Vector2 touchPosition)
+    bool GetTouchPos(out Vector2 touchPosition)
     {
         if (Input.touchCount > 0)
         {
@@ -37,7 +35,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     }
     void Update()
     {
-        if (!TryGetTouchPosition(out Vector2 touchPosition))
+        if (!GetTouchPos(out Vector2 touchPosition))
             return;
         if (ACManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
         {
@@ -112,10 +110,34 @@ public class ARTapToPlaceObject : MonoBehaviour
         clearr();
         showingPlane = arModels[7];
     }
+    //ti le scale trung voi value cua slide
     public void OnSliderValueChanged()
     {
         Slider slider = GameObject.FindGameObjectWithTag("scalesl").GetComponent<Slider>();
         spawedObject.transform.localScale = new Vector3(slider.value, slider.value, slider.value);
     }
-
+    //xoay 9 do moi lan nhan
+    public void LeftRotation()
+    {
+        float rx = spawedObject.transform.rotation.x;
+        float ry = spawedObject.transform.rotation.y - 9;
+        float rz = spawedObject.transform.rotation.z;
+        // spawedObject.transform.localEulerAngles = new Vector3(rx, ry, rz);
+        spawedObject.transform.Rotate(new Vector3(rx, ry, rz));
+    }
+    public void RightRotation()
+    {
+        float rx = spawedObject.transform.rotation.x;
+        float ry = spawedObject.transform.rotation.y + 9;
+        float rz = spawedObject.transform.rotation.z;
+        spawedObject.transform.Rotate(new Vector3(rx, ry, rz));
+    }
+    public void MakeInvisible()
+    {
+        spawedObject.transform.localScale = new Vector3(0, 0, 0);
+    }
+    public void MakeVisible()
+    {
+        spawedObject.transform.localScale = new Vector3(0.03f, 0.001f, 0.03f);
+    }
 }
