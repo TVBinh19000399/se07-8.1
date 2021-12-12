@@ -19,13 +19,13 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - ARCore (Version: 2018.3): Unity version from 2019 or earlier (because Unity version from 2020 or later no longer support arcore SDK)
 - ARFoundation(Curent version: 2020.2): With ARCore Extension
 
-## Video Demo
+## Video Demo:
 https://youtu.be/FzPs7gOlLvY
 
 ## Demo AR Foundation/ARCore Extension (Unity version 2020)
 ![20211207_000442](https://user-images.githubusercontent.com/92351087/144957777-81a3428b-4898-4212-b9f6-1feeed1cef04.gif)
 
 
-## New update
-![image](https://user-images.githubusercontent.com/92351087/144897376-bb03eb14-5c77-4e7e-8708-b3711b6c30b6.png)
+## New UI update 
+![12122021](https://user-images.githubusercontent.com/92351087/145708584-fe06a11f-8b77-44de-ad2f-e12137b8fd58.png)
 
