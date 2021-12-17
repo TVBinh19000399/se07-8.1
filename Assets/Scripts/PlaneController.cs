@@ -11,7 +11,7 @@ public class PlaneController : MonoBehaviour
     [SerializeField]
     Text togglePlaneText;
     ARPlaneManager ARPlaneManager;
-    private GameObject defaultPlane;
+    //private GameObject defaultPlane;
     bool isFilled = false;
     public ARSession arSession;
     public Text togglePlaneTxt
@@ -22,7 +22,7 @@ public class PlaneController : MonoBehaviour
     void Awake()
     {
         ARPlaneManager = GetComponent<ARPlaneManager>();
-        defaultPlane = GameObject.FindGameObjectWithTag("PlaneTag");
+        //defaultPlane = GameObject.FindGameObjectWithTag("PlaneTag");
     }
 
     public void TogglePlane()
