@@ -233,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 267.19214}
-  m_SizeDelta: {x: 500, y: 168.7964}
+  m_AnchoredPosition: {x: -1, y: 268.5}
+  m_SizeDelta: {x: 500, y: 166.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54667607
 MonoBehaviour:
@@ -1027,8 +1027,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -102.12396}
-  m_SizeDelta: {x: 500, y: 168.0807}
+  m_AnchoredPosition: {x: -2, y: -102.6}
+  m_SizeDelta: {x: 500, y: 166.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455545166
 MonoBehaviour:
@@ -1399,8 +1399,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -471.575}
-  m_SizeDelta: {x: 500, y: 168.7494}
+  m_AnchoredPosition: {x: -2, y: -471.575}
+  m_SizeDelta: {x: 500, y: 166.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679923155
 MonoBehaviour:
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1765708168}
         m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
