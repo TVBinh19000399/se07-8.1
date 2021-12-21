@@ -21,7 +21,8 @@ public class SceneTransition : MonoBehaviour
         fader.gameObject.SetActive(true);
         LeanTween.scale(fader, Vector3.zero, 0);
         LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutCirc).setOnComplete(()=> {
-            Invoke("LoadAR", 0.5f);
+            //Invoke("LoadAR", 0.5f);
+            SceneManager.LoadScene(1);
         });
     }
     public void LoadMenuScene()
@@ -33,10 +34,12 @@ public class SceneTransition : MonoBehaviour
         });
     }
 
+    /*
     private void LoadAR()
     {
         SceneManager.LoadScene(1);
     }
+    */
 
     public void Quit()
     {
