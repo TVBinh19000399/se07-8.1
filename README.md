@@ -8,7 +8,7 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 - Nguyễn Thanh Chính - 18001024
 - Trần Hồng Lâm - 19000443
 - Đỗ Vũ Quang - 19000467
-## Giới thiệu và mục tiêu của project:
+## Giới thiệu về project:
 - Tìm hiểu về AR.
 - Tạo một ứng dụng AR đơn giản (ARCore).
 - Thay thế một mặt phẳng bằng một ảnh bề mặt cho trước.
