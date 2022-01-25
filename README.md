@@ -25,6 +25,7 @@ Dựng một ứng dụng AR đơn giản, đi từ việc tạo model đến vi
 ![20211207_000442](https://user-images.githubusercontent.com/92351087/144957777-81a3428b-4898-4212-b9f6-1feeed1cef04.gif)
 
 ## Giao diện ứng dụng (mới)
+- https://youtu.be/x8KIxdsvdJ0
 ![Screenshot_2022-01-24-20-29-24](https://user-images.githubusercontent.com/92351087/150792487-15df7db8-e0b5-469e-8a69-805f85318b12.png)
 ![Screenshot_2022-01-24-20-32-00](https://user-images.githubusercontent.com/92351087/150792707-c0717014-3487-4e5d-9682-8c894245f4c8.png)
 ![Screenshot_2022-01-24-20-31-07](https://user-images.githubusercontent.com/92351087/150792642-82414a2d-beb0-4c78-be0c-2169e878bbbd.png)
